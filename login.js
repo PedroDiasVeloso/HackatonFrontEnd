@@ -1,17 +1,13 @@
-
-$("#submitButton").click(function(event) {
+$("#loginbutton").click(function(event) {
     event.preventDefault();
 
     var data = {
-        "username" : $("#uname").val(),
-        "firstName" : $("#fname").val(),
-        "lastName" : $("#lname").val(),
-        "age" : $("#age").val(),
-        "password" : $("#password").val()
+        "username" : $("#inputUsername").val(),
+        "password" : $("#inputPassword").val()
     }
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api',
+        url: 'https://teenhelper.herokuapp.com/api/login',
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

@@ -1,17 +1,15 @@
-
-$("#submitButton").click(function(event) {
+$("#SubmitButton").click(function(event) {
     event.preventDefault();
 
     var data = {
-        "username" : $("#uname").val(),
-        "firstName" : $("#fname").val(),
-        "lastName" : $("#lname").val(),
-        "age" : $("#age").val(),
-        "password" : $("#password").val()
+        "firstQuestion" : $("#firstChoice").val(),
+        "secondQuestion" : $("#secondChoice").val(),
+        "thirdQuestion" : $("#thirdChoice").val(),
+        "fourthQuestion" : $("#fourthChoice").val()
     }
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api',
+        url: 'https://teenhelper.herokuapp.com/api/0',
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",
@@ -20,8 +18,7 @@ $("#submitButton").click(function(event) {
             alert('Error: ' + xhr.statusText);
         },
         success: function () {
-            window.location.replace("index.html");
+            console.log(data);
         }
     }); 
-
 })
