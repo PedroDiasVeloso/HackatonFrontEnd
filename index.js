@@ -15,8 +15,8 @@ $("#SubmitButton").click(function(event) {
         data: JSON.stringify(data),
         datatype: "json",
         contentType: "application/json; charset=utf-8",
-        error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
+            error: function (xhr) {
+                alert('Error: ' + xhr.statusText);
         },
         success: function () {
             console.log(data);

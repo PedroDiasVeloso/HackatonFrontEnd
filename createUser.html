@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create User</title>
+    <script src="js/createUser.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/createuser.css">
 </head>
+
 <body>
+    <div class="container col-md-6"> 
+        <h1>Create your account</h1>
+    </div>
+    <div class="container col-md-6">
+        <form id="userForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Username</label>
+                    <input type="usernameX\" class="form-control" id="inputUsername" placeholder="Username">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
 
-    <h1>Create your account</h1>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputFName">First Name</label>
+                    <input type="text" class="form-control" id="inputFName">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLName">Last Name</label>
+                    <input type="text" class="form-control" id="inputLName">
+                </div>
+            </div>
 
-    <form id="usercreation">
-                <label><strong>Username</strong></label><input type="text" id="uname"
-                size="28" class="input" />
-                <br>
-                <label><strong>First Name</strong></label><input type="text" id="fname" 
-                size="28" class="input" />
-                <br>
-                <label><strong>Last Name</strong></label><input type="text" id="lname"
-                size="28" class="input" />
-                <br>
-                <label><strong>Age</strong></label><input type="number" id="age" 
-                size="3"/>
-                <br>
-                <label><strong>Password</strong></label><input type="password" id="password" 
-                minlength="8" required/>
-    </form>
-    
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" id="inputAge">
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-lg btn-block">Submit</button>
+            </div>
+            <hr>
+            <div class="form-row signIn">
+                <p>If you have an account</p>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">login</button>
+            </div>
+
+        </form>
+    </div>
+    </div>
+
 </body>
+
 </html>
