@@ -12,16 +12,17 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
         integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="js/login.js" defer></script>
-    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link rel="stylesheet" href="css/preform.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lobster&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="js/preform.js" defer></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="container" id="outerbox">
-        <div class="col-md-6">
+    <div class="container">
+        <div class="col-md-6" id="outerbox">
             <img src="resources/BFAM.png" alt="logo">
         </div>
         <div class="container">
@@ -29,31 +30,31 @@
                 <div class="mh-100" style="width: 500px">
                     <form>
                         <br>
-                        <div class="row mb-3">
-                            <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                        <div class="row mb-3" id="outerbox">
                             <div class="col-sm-10">
-                                <input type="username" class="form-control" id="inputUsername">
+                                <h3 id="preform">Welcome to B-FAM</h3>
+                                <hr>
+                                We want to know you! Please tell us about yourself so we can connect to your
+                                problems.
+                                We have developed a questionnaire, based on the world famous cartoon Family Guy,
+                                that we will use to connect you to other users that are going throught the same
+                                problems...
                             </div>
                         </div>
-                        <br>
-                        <div class="row mb-3">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword">
-                            </div>
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="loginbutton">Log in</button>
-                        <hr>
-                        <button type="submit" class="btn btn-warning btn-lg btn-block" id="signupbutton">Sign
-                            up</button>
                     </form>
                 </div>
+                <hr>
+                <div>
+                    <button type="submit" class="btn btn-success" id="form">Go to
+                        Form</button>
+                </div>
             </div>
+
         </div>
+
     </div>
 
-    
+
 </body>
 
 </html>
