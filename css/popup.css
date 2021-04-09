@@ -105,3 +105,9 @@
   right: 190px;
   top : 330px;
 }
+
+#informative{
+  position: fixed;
+  top: 305px;
+  right: 400px;
+}

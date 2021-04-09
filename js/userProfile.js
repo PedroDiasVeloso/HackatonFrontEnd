@@ -25,6 +25,10 @@ $.ajax({
     success: function (data) {
         console.log(data);
         thisRank = data.rank;
+        $("#userNamePlace").text(data.username);
+        $("#namePlace").text(data.firstName + " " + data.lastName);
+        $("#rankPlace").text(data.rank);
+        
         for(i = (data.inBox.length) - 1 ; i >=0 ; i--){
             $("#scroll").append("<p>" + data.inBox[i] + "</p>");
         }
