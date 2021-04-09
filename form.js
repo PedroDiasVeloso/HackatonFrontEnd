@@ -22,7 +22,7 @@ $("#SubmitButton").click(function(event) {
         },
         success: function (data) {
             console.log(data);
-            window.location.replace("userPage.html");
+            window.location.replace("userProfile.html");
             
         }
     }); 
@@ -47,7 +47,7 @@ else{
         },
         success: function (data) {
 
-          $("#userProfile").append("<p>" + data.firstName + "</p>" + "<p>" + data.lastName + "</p>");
+          
 
         }
     }); 
