@@ -9,7 +9,7 @@ $("#SubmitButton").click(function(event) {
     }
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/0',
+        url: 'https://teenhelper.herokuapp.com/api/formResponde',
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

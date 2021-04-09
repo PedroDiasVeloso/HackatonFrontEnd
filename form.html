@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <script src="js/form.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+    <div class="container" id="outerbox">
+
+        <div class="container" id="logo">
+            <img src="resources/BFAM.png" alt="logo" id="picture1">
+        </div>
+
+        <div class="container" id="formIntro">
+            <p>Help us out to give you some hints based on your family profile and suggest you bodies to connect</p>
+            <p>Take Griffin Family story as example so we can compare and give you a rank</p>
+        </div>
+
+        <div class="container-fluid" id="gifs">
+            <img style=max-width:17% src="resources/105400-family-guy-ruuun.gif" id="p1">
+            <img style=max-width:17% src="resources/carJump.gif" id="p2">
+            <img style=max-width:17% src="resources/pijama.gif" id="p3">
+            <img style=max-width:17% src="resources/sofa.gif" id="p4">
+            <img style=max-width:17% src="resources/weid.gif" id="p5">
+            <br>
+            <br>
+        </div>
+
+
+        <form action="" method="POST">
+            <p>
+
+            <div class="container-fluid row" id="quest">
+                <div class="col-md-6">
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        id="firstChoice" name="favorite">
+                        <option selected>Does your father or mother drink a lot?</option>
+                        <option value="2">Drinks like Peter Griffin, always at the bar!</option>
+                        <option value="0">Drinks like Stewie, so not at all.</option>
+                        <option value="1">Drinks like Brian, always drunk around the house.</option>
+                    </select>
+
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        id="secondChoice" name="favorite">
+                        <option selected>Does your father or mother use drugs?</option>
+                        <option value="0">Like Brian on a good day, smokes weed!</option>
+                        <option value="1">Like Brian on a bad day, does coke!</option>
+                        <option value="2">Like Stewie, so not at all.</option>
+                    </select>
+
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        id="thirdChoice" name="favorite">
+                        <option selected>Does your family often yell at each other ?</option>
+                        <option value="0">Nah they are like Brian and Stewie, always partners!</option>
+                        <option value="1">Sometimes, like Chris and Meg they can be competitive!</option>
+                        <option value="2">Alot! Like Stewie and Lois theres profound hate!</option>
+                    </select>
+
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                        id="fourthChoice" name="favorite">
+                        <option selected>Does your family spend time together ?</option>
+                        <option value="0">Yes, like at the end of the episode, we all sit on the couch!</option>
+                        <option value="1">Sometimes, like Chris and Meg they can be competitive!</option>
+                        <option value="2">Alot! Like Stewie and Lois theres profound hate!</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <p>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="firstChoice" name="favorite">
+                            <option selected>Does your family make you feel aside</option>
+                            <option value="2">like  Griffin, always at the bar!</option>
+                            <option value="0">Drinks like Stewie, so not at all.</option>
+                            <option value="1">Drinks like Brian, always drunk around the house.</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="secondChoice" name="favorite">
+                            <option selected>Does your sister or brother ?</option>
+                            <option value="0">Like Brian on a good day, smokes weed!</option>
+                            <option value="1">Like Brian on a bad day, does coke!</option>
+                            <option value="2">Like Stewie, so not at all.</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="thirdChoice" name="favorite">
+                            <option selected>Does your family often yell at each other ?</option>
+                            <option value="0">Nah they are like Brian and Stewie, always partners!</option>
+                            <option value="1">Sometimes, like Chris and Meg they can be competitive!</option>
+                            <option value="2">Alot! Like Stewie and Lois theres profound hate!</option>
+                        </select>
+
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+                            id="fourthChoice" name="favorite">
+                            <option selected>Does your family spend time together ?</option>
+                            <option value="0">Yes, like at the end of the episode, we all sit on the couch!</option>
+                            <option value="1">Sometimes, like Chris and Meg they can be competitive!</option>
+                            <option value="2">Alot! Like Stewie and Lois theres profound hate!</option>
+                        </select>
+
+                </div>
+
+            </div>
+
+            <div class="container-fluid">
+                <button type="button" class="btn btn-primary" id="SubmitButton" type="submit" id="send">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
