@@ -17,9 +17,9 @@ $("#loginbutton").click(function(event) {
         error: function (xhr) {
             alert('Error: ' + xhr.statusText);
         },
-        success: function () {
-            //alert('teste')
-            //window.location.replace("index.html");
+        success: function (received) {
+            sessionStorage.setItem("LoginID", received);
+            window.location.replace("userPage.html");
         }
     }); 
 
