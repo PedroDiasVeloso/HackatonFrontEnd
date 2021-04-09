@@ -1,4 +1,3 @@
-$(document).ready(function () {
-    window.location.replace("loginPage.html")
-});
+window.location.replace("loginPage.html");
+
 
