@@ -78,6 +78,7 @@
   overflow-y: auto;
   text-align: center;
   padding: 20px;
+  font-family: 'Tinos', serif;
   
 }
 
@@ -120,5 +121,9 @@
 }
 
 .container{
+  font-family: 'Tinos', serif;
+}
+
+#namePlace, #rankPlace{
   font-family: 'Tinos', serif;
 }
