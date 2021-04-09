@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="tab">Profile</title>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
     <script src="js/userProfile.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#foot").load("footer.html");
+        });
+    </script>
 </head>
+
 
 <body>
 
-    <h1></h1>
+
+    <h1 id="this"></h1>
 
     <img src="" alt="random person">
 
@@ -19,8 +29,18 @@
 
 
     <div class="msg-btn">
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Messages</button>
+        <button id="messageButton" type="submit" class="btn btn-primary btn-lg btn-block">Messages</button>
     </div>
+
+    <div class="msg-btn">
+        <button id="logoutButton" type="submit" class="btn btn-primary btn-lg btn-block">Logout</button>
+    </div>
+
+
+    <div id = "foot"></div>
+
+    
+
  
 </body>
 
