@@ -7,12 +7,13 @@ $("#SubmitButton").click(function(event) {
         "thirdQuestion" : $("#thirdChoice").val(),
         "fourthQuestion" : $("#fourthChoice").val(),
         "fifthQuestion" : $("#fifthChoice").val(),
-        "sixthQuestion" : $("sixthChoice").val(),
-        "seventhQuestion" : $("seventhChoice").val(),
-        "eightQuestion" : $("eightChoice").val()
+        "sixthQuestion" : $("#sixthChoice").val(),
+        "seventhQuestion" : $("#seventhChoice").val(),
+        "eightQuestion" : $("#eightChoice").val()
     }
 
     var theId  = sessionStorage.getItem('UserID');
+    console.log(data);
 
     $.ajax({
         url: 'https://b-fam.herokuapp.com/api/formResponse/' + theId,
@@ -22,12 +23,12 @@ $("#SubmitButton").click(function(event) {
         assync: false,
         contentType: "application/json; charset=utf-8",
         error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
+            alert('Error: ' + xhr);
         },
         success: function (data) {
             console.log(data);
             window.location.replace("userProfile.html");
-            
+    
         }
     }); 
 })
