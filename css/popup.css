@@ -118,6 +118,11 @@
   position: absolute;
   top: 350px;
   left: 350px;
+  border-radius: 49px;
+  background: linear-gradient(145deg, #84b0c2, #9dd1e6);
+  box-shadow:  22px 22px 44px #5a7783,
+               -22px -22px 44px #ccffff;
+  width: 200ppx;
 }
 
 .container{
