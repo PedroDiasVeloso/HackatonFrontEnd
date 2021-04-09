@@ -1,6 +1,7 @@
 var id = 0;
 var thisRank = 0;
 var thisName = "";
+var thisAge = 0;
 
 if (sessionStorage.getItem("LoginID") == null) {
     id = sessionStorage.getItem("UserID");
@@ -21,12 +22,13 @@ $.ajax({
     assync: false,
     contentType: "application/json; charset=utf-8",
     error: function (xhr) {
-        alert('Error: ' + xhr.statusText);
+        alert("No profile found!");
     },
     success: function (data) {
         console.log(data);
         thisRank = data.rank;
         thisName = data.username;
+        thisAge = data.age;
         $("#userNamePlace").text(data.username);
         $("#namePlace").text(data.firstName + " " + data.lastName);
         $("#rankPlace").text(data.rank);
@@ -38,13 +40,23 @@ $.ajax({
         $.ajax({
             url: 'https://b-fam.herokuapp.com/api/users',
             type: 'Get',
-            error: function (xhr) {
-                alert('Error: ' + xhr.statusText);
+            error: function () {
+                alert("No profile found!");
             },
             success: function (result) {
                 for(i = 0; i < result.length; i++){
                     if((result[i].rank == thisRank || result[i].rank == thisRank-1 || result[i].rank == thisRank+1) && result[i].username != thisName ){
-                        $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
+                        if(thisAge < 18){
+                            if(result[i].age < 18){
+                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
+                            }
+                        }
+                        else if(thisAge >= 18){
+                            if(result[i].age >=18){
+                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
+                            }
+                        }
+                        
                     }
                 }
             }
@@ -70,7 +82,7 @@ $("#messageButton").click(function (event) {
         datatype: "json",
         contentType: "application/json; charset=utf-8",
         error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
+            alert("Error sending message, please try again.");
         },
         success: function (received) {
             location.reload();

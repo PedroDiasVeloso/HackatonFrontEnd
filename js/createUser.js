@@ -16,7 +16,7 @@
             datatype: "json",
             contentType: "application/json; charset=utf-8",
             error: function (xhr) {
-                alert('Error: ' + xhr.statusText);
+                alert("Error creating user. Try a different Username.");
             },
             success: function (data) {
                 console.log(data)
