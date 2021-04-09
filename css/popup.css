@@ -78,6 +78,7 @@
   overflow-y: auto;
   text-align: center;
   padding: 20px;
+  font-family: 'Bangers', cursive;
   
 }
 
@@ -107,7 +108,19 @@
 }
 
 #informative{
-  position: fixed;
-  top: 305px;
-  right: 400px;
+  margin-top: -25px;
+  position: inherit;
+  left: 200px;
 }
+
+
+#backButton{
+  position: absolute;
+  top: 350px;
+  left: 350px;
+}
+
+.container{
+  font-family: 'Bangers', cursive;
+}
+

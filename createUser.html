@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/createuser.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <script>
         $(document).ready(function(){
         $("#foot").load("footer.html");
@@ -24,22 +26,25 @@
         position: relative;
         left: 300px;
     }
+    #foot{
+        font-family: 'Bangers', cursive;
+    }
 </style>
 
 <body>
-    <div class="container col-md-6"> 
+    <div id="parent" class="container col-md-6"> 
         <h1>Create your account</h1>
     </div>
-    <div class="container col-md-6">
+    <div id="parent" class="container col-md-6">
         <form id="userForm">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Username</label>
-                    <input type="usernameX\" class="form-control" id="inputUsername" placeholder="Username">
+                    <input type="usernameX\" class="form-control" id="inputUsername">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="inputPassword">
                 </div>
             </div>
 

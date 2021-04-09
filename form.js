@@ -23,7 +23,7 @@ $("#SubmitButton").click(function(event) {
         assync: false,
         contentType: "application/json; charset=utf-8",
         error: function (xhr) {
-            alert('Error: ' + xhr);
+            alert("Error in form completation. Please try again.");
         },
         success: function (data) {
             console.log(data);

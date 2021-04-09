@@ -15,7 +15,7 @@ $("#loginbutton").click(function(event) {
         datatype: "json",
         contentType: "application/json; charset=utf-8",
         error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
+            alert("This User does not exist. Try again");
         },
         success: function (received) {
             sessionStorage.setItem("LoginID", received);
