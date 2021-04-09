@@ -93,6 +93,7 @@ $("#messageButton").click(function (event) {
 
 
 function sendBack() {
+    sessionStorage.clear();
     window.location.replace("loginPage.html");
 }
 
