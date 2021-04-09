@@ -28,12 +28,16 @@
     <div id="includedContent"></div>
 
 
-    <div class="msg-btn">
-        <button id="messageButton" type="submit" class="btn btn-primary btn-lg btn-block">Messages</button>
-    </div>
+    <form>
+        <input type="text">Username</input>
+        <input type="text">Message</input>
+        <button id="messageButton" type="submit">Messages</button>
+    </form>
+        
+    
 
     <div class="msg-btn">
-        <button id="logoutButton" type="submit" class="btn btn-primary btn-lg btn-block">Logout</button>
+        <button id="logoutButton" onclick="sendBack()" type="submit">Logout</button>
     </div>
 
 

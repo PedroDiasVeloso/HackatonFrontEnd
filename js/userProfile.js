@@ -1,6 +1,10 @@
 var id = 0;
 
-id = sessionStorage.getItem("LoginID");
+if(sessionStorage.getItem("LoginID") == null){
+    id = sessionStorage.getItem("UserID");
+}
+else{id = sessionStorage.getItem("LoginID");}
+
 
 $(document).ready(function(){
     $("#this").text("Hello");
@@ -49,21 +53,8 @@ $("#messageButton").click(function(event) {
 })
 
 
-$("#logoutButton").click(function(event) {
-    event.preventDefault();
 
-    $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/logout',
-        type: 'Get',
-        data: JSON.stringify(data),
-        datatype: "json",
-        contentType: "application/json; charset=utf-8",
-        error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
-        },
-        success: function (received) {
-            window.location.replace("loginPage.html");
-        }
-    }); 
-})
+function sendBack (){
+    window.location.replace("loginPage.html");
+}
 
