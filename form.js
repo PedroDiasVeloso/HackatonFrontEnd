@@ -11,11 +11,7 @@ $("#SubmitButton").click(function(event) {
     var theId  = sessionStorage.getItem('UserID');
 
     $.ajax({
-<<<<<<< HEAD
-        url: 'https://teenhelper.herokuapp.com/api/formResponde',
-=======
         url: 'https://teenhelper.herokuapp.com/api/formResponse/' + theId,
->>>>>>> 7529decbf169b71514167d46080d9903c9c3f10c
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

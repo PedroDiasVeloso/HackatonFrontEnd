@@ -21,7 +21,7 @@
             success: function (data) {
                 console.log(data)
                 sessionStorage.setItem("UserID", data);
-                window.location.replace("index.html");
+                window.location.replace("preform.html");
             }
         }); 
     
