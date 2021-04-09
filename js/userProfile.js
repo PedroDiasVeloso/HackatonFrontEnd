@@ -48,12 +48,12 @@ $.ajax({
                     if((result[i].rank == thisRank || result[i].rank == thisRank-1 || result[i].rank == thisRank+1) && result[i].username != thisName ){
                         if(thisAge < 18){
                             if(result[i].age < 18){
-                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
+                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + " rank. The same as you , contact him! Maybe you could be friends!</p>")
                             }
                         }
                         else if(thisAge >= 18){
                             if(result[i].age >=18){
-                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
+                                $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + " rank. The same as you , contact him! Maybe you could be friends!</p>")
                             }
                         }
                         
