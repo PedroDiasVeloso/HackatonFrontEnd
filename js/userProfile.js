@@ -1,5 +1,6 @@
 var id = 0;
 var thisRank = 0;
+var thisName = "";
 
 if (sessionStorage.getItem("LoginID") == null) {
     id = sessionStorage.getItem("UserID");
@@ -25,6 +26,7 @@ $.ajax({
     success: function (data) {
         console.log(data);
         thisRank = data.rank;
+        thisName = data.username;
         $("#userNamePlace").text(data.username);
         $("#namePlace").text(data.firstName + " " + data.lastName);
         $("#rankPlace").text(data.rank);
@@ -41,8 +43,8 @@ $.ajax({
             },
             success: function (result) {
                 for(i = 0; i < result.length; i++){
-                    if(result[i].rank == thisRank || result[i].rank == thisRank-1 || result[i].rank == thisRank+1){
-                        $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + ". The same as you , contact him! Maybe you could be friends!</p>")
+                    if((result[i].rank == thisRank || result[i].rank == thisRank-1 || result[i].rank == thisRank+1) && result[i].username != thisName ){
+                        $("#rankSpace").append("<p>" + result[i].username + " also has a " + result[i].rank + "rank. The same as you , contact him! Maybe you could be friends!</p>")
                     }
                 }
             }

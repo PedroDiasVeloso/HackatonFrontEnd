@@ -107,7 +107,14 @@
 }
 
 #informative{
-  position: fixed;
-  top: 305px;
-  right: 400px;
+  margin-top: -25px;
+  position: inherit;
+  left: 200px;
+}
+
+
+#backButton{
+  position: absolute;
+  top: 350px;
+  left: 300px;
 }
