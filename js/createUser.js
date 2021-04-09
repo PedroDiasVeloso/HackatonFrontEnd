@@ -25,4 +25,14 @@
             }
         }); 
     
-    })    
+    })
+
+
+    $("#loginButton").click(function(event){
+        event.preventDefault();
+        loadLoginPage();
+    })
+
+    function loadLoginPage(){
+        window.location.replace("loginPage.html");
+    }
