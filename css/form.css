@@ -5,14 +5,36 @@
         max-width: 25%
       }
 
-
 .container{
     font-family: 'Tinos', serif;
-
 }
 
 #quest{
+    font-family: 'Tinos', serif;
+    background-color: azure;
     display: flex;
     justify-content: space-between;
+    vertical-align: top;
   }
+
+  #SubmitButton{
+    border-radius: 49px;
+    background: linear-gradient(145deg, #84b0c2, #9dd1e6);
+    box-shadow:  22px 22px 44px #5a7783,
+                 -22px -22px 44px #ccffff;
+    width: 200ppx;
+  }
+
+  .row{
+    display: flex;
+    justify-content: right;
+  }
+
+  #buttonS{
+    align-items: center;
+  }
+
+
+
+
 
