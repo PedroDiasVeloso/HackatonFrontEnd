@@ -1,4 +1,4 @@
-var urlApi = "https://teenhelper.herokuapp.com/api/login";
+var urlApi = "https://b-fam.herokuapp.com/api/login";
 
 $("#loginbutton").click(function(event) {
     event.preventDefault();
@@ -9,7 +9,7 @@ $("#loginbutton").click(function(event) {
     }
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/login',
+        url: 'https://b-fam.herokuapp.com/api/login',
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

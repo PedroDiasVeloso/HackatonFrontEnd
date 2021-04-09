@@ -5,13 +5,17 @@ $("#SubmitButton").click(function(event) {
         "firstQuestion" : $("#firstChoice").val(),
         "secondQuestion" : $("#secondChoice").val(),
         "thirdQuestion" : $("#thirdChoice").val(),
-        "fourthQuestion" : $("#fourthChoice").val()
+        "fourthQuestion" : $("#fourthChoice").val(),
+        "fifthQuestion" : $("#fifthChoice").val(),
+        "sixthQuestion" : $("sixthChoice").val(),
+        "seventhQuestion" : $("seventhChoice").val(),
+        "eightQuestion" : $("eightChoice").val()
     }
 
     var theId  = sessionStorage.getItem('UserID');
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/formResponse/' + theId,
+        url: 'https://b-fam.herokuapp.com/api/formResponse/' + theId,
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

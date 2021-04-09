@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 
 $.ajax({
-    url: 'https://teenhelper.herokuapp.com/api/' + id,
+    url: 'https://b-fam.herokuapp.com/api/' + id,
     type: 'Get',
     datatype: "json",
     assync: false,
@@ -34,7 +34,7 @@ $.ajax({
         }
 
         $.ajax({
-            url: 'https://teenhelper.herokuapp.com/api/users',
+            url: 'https://b-fam.herokuapp.com/api/users',
             type: 'Get',
             error: function (xhr) {
                 alert('Error: ' + xhr.statusText);
@@ -62,7 +62,7 @@ $("#messageButton").click(function (event) {
     }
 
     $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/message/' + id,
+        url: 'https://b-fam.herokuapp.com/api/message/' + id,
         type: 'Post',
         data: JSON.stringify(data),
         datatype: "json",

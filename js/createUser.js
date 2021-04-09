@@ -10,7 +10,7 @@
         }
     
         $.ajax({
-            url: 'https://teenhelper.herokuapp.com/api',
+            url: 'https://b-fam.herokuapp.com/api',
             type: 'Post',
             data: JSON.stringify(data),
             datatype: "json",
