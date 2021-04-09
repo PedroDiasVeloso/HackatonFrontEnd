@@ -18,7 +18,9 @@
             error: function (xhr) {
                 alert('Error: ' + xhr.statusText);
             },
-            success: function () {
+            success: function (data) {
+                console.log(data)
+                sessionStorage.setItem("UserID", data);
                 window.location.replace("index.html");
             }
         }); 
