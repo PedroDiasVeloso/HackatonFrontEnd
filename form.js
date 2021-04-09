@@ -28,29 +28,7 @@ $("#SubmitButton").click(function(event) {
     }); 
 })
 
-var id = 0;
-if(sessionStorage.getItem("LoginID") == null){
-    id = sessionStorage.getItem("UserID");
-}
-else{
-    id = sessionStorage.getItem("LoginID");
-}
 
-    $.ajax({
-        url: 'https://teenhelper.herokuapp.com/api/' + id,
-        type: 'Get',
-        datatype: "json",
-        assync: false,
-        contentType: "application/json; charset=utf-8",
-        error: function (xhr) {
-            alert('Error: ' + xhr.statusText);
-        },
-        success: function (data) {
-
-          
-
-        }
-    }); 
 
 
 

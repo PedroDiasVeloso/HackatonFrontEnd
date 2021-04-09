@@ -19,7 +19,7 @@ $("#loginbutton").click(function(event) {
         },
         success: function (received) {
             sessionStorage.setItem("LoginID", received);
-            window.location.replace("userPage.html");
+            window.location.replace("userProfile.html");
         }
     }); 
 
