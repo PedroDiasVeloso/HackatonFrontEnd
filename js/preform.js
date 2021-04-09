@@ -1,5 +1,7 @@
 
 
-function goToForm(){window.location.replace('index.html');}
+function goToForm(){
+    window.location.replace("form.html");
+}
     
 
