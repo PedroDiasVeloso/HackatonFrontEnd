@@ -69,3 +69,39 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+#scroll {
+  background-color: yellow;
+  width: 600px;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+#rankSpace{
+    background-color: yellow;
+    width: 600px;
+    height: 250px;
+    top: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+
+}
+
+#foot{
+  position: absolute;
+  width: 100%;
+  top: 800px;
+  left: -150px;
+}
+
+#chatRow{
+  position: absolute;
+  right: 195px;
+  top : 330px;
+}
