@@ -1,5 +1,5 @@
-$("#form").click(function(event) {
-    event.preventDefault();
-    window.location.replace('');
 
-});
+
+function goToForm(){window.location.replace('index.html');}
+    
+

@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title id="tab">Profile</title>
-    <link rel="stylesheet" href="css/userProfile.css">
     <script src="js/userProfile.js" defer></script>
+    <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script>
+            $(document).ready(function(){
+            $("#foot").load("footer.html");
+            });
+        </script>
 
 </head>
 
@@ -19,61 +24,44 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <h2>Welcome</h2>
-                <img src="https://static.wikia.nocookie.net/p__/images/8/86/Ladyredbush.png/revision/latest/scale-to-width-down/487?cb=20141113124338&path-prefix=protagonist"
+                <h2 id="userNamePlace"></h2>
+                <img src="https://th.bing.com/th/id/OIP.MhK28moG9-xQTlYqfPa2EgHaDy?w=284&h=178&c=7&o=5&dpr=1.25&pid=1.7"
                     alt="" style="width:250px;height:250px;">
-                <p>rank</p>
+                <p>  </p>
+                Full Name: <p id="namePlace"></p>
+                Your Rank: <p id="rankPlace"></p>
             </div>
-            <div class="col-sm">
+            <div id="rankSpace" class="col-sm">
                 <h3>Users with same rank</h3>
+                
+
             </div>
         </div>
-        <div class="row">
+        <div id="chatRow" class="row">
+            <span id="informative">This is your messages feed!</span>
             <div id="scroll">
-                <div>1. The Reminder Text Message
 
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-                    1. The Reminder Text Message
-
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-                    1. The Reminder Text Message
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-                    1. The Reminder Text Message
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-                    1. The Reminder Text Message
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-                    1. The Reminder Text Message
-
-                    Send a text to your subscribers reminding them of an upcoming appointment, session, or meeting.
-                    Why it works: The added value here is in the thoughtfulness and personalization that comes with the
-                    reminder. You’re clearing up their headspace by giving them a reminder of their task and, in turn,
-                    reducing the number of pesky no-shows on your end.
-
-                </div>
-                </p>
             </div>
         </div>
     </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+          <h1>Chat</h1>
+      
+          Username<input id="inputUsername" type="text">
+          <label for="msg"><b>Message</b></label>
+          <textarea id="inputMessage" placeholder="Type message.." name="msg" required></textarea>
+      
+          <button id="messageButton" type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <footer id="foot"></footer>
+
 
 
 
